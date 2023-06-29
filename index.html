@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Mass Index</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="intro-and-form">
+            <div class="introduction">
+                <h2 class="title">Body Mass Index Calculator</h2> 
+                <p class="introduction-text">Better understand your weight in relation to your height using our body mass index(BMI) Calculator.
+                    while Bmi is not the sole determination of a healthy weight,
+                    it offers a valuablle starting point to evaluate your overall health and well-being.
+                </p>
+            </div>
+            <form class="calculation-form">
+                <p class="form-title">Enter Your details below</p>
+                <div class="input-value">
+                    <div>
+                        <label for="height">Height</label> <br>
+                        <input type="number" id="height" name="height" value="" placeholder="0" oninput="calculateBmi()" required>
+                        <p class="unit cm" id="height-unit">CM</p>                       
+                    </div>
+                    <div>
+                        <label for="weight">weight</label><br>
+                        <input type="number" id="weight" name="weight" value="" placeholder="0" required oninput="calculateBmi()">
+                        <p class="unit kg" id="weight-unit">KG</p>
+                    </div>
+                </div>
+                <div class="result-display" id="resultDisplay">
+                    <p class="result-title" id="resultTitle">welcome!</p>
+                    <p class="result-text" id="result">Enter your height and weight and you'll see your BMI result here</p>
+                </div>  
+            </form>
+        </div>
+        <div class="pictureAndComment">
+            <img src="images/image.png">
+            <div class="comment">
+                <h3 class="comment-tite"> What's your BMI result means</h3>
+                <p class="comment-text"> A BMI range of 18.5 to 24.9 is considered a healthy weight.
+                    Maintining a healthy weight may lower your chances of experiencing health issue,
+                    such as obesity and type 2 diabetes,Aim for nutrition diet with reduced fat and sugar 
+                    content . incorporating ample fruits and vegetables. Additionnally, strive for regular 
+                    physical activity, idealy about 30minutes a day for five days a week.
+                </p>
+            </div>
+        </div>
+        <div class="advice">
+            <div class="healthy-eating">
+                <img src="images/healthy.png">
+                <h3>Healthy eating</h3>
+                <p>
+                    Healthy eating promotes weight control, disease prevention, better degestion, immunity, mental clarity, and mood. 
+                </p>
+            </div>
+            <div class="regular-exercice">
+                <img src="images/exercise.png">
+
+                <h3>Regular exercice</h3>
+                <p>
+                    Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness and longevity.
+                </p>
+            </div>
+            <div class="adequate-sleep">
+                <img src="images/sleep.png">
+
+                <h3>Adequate sleep</h3>
+                <p>
+                    Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.
+                </p>
+            </div>
+        </div>
+        <div class="limitation-of-bmi">
+            <section class="top-container">
+                <div class="title-and-text">
+                    <h3 class="limitation-of-bmi-title">Limitation of BMI</h3>
+                    <p>Although BMI is often a practical indicator of healthy weight, it is not suited for every person.
+                        specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement 
+                        may not be benificial to use.
+                    </p>
+                </div>
+                <div class="gender">
+                    <img src="images/gender.svg" alt="">
+                    <h3>Gender</h3>
+                    <p>The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI</p>
+                </div>
+            </section>
+            <section class="middle-container">
+                <div class="age">
+                    <img src="images/cake.svg" alt="">
+                    <h3>Age</h3>
+                    <p>In aging individuals, increased body fat and muscle loss ma cause BMI to underestimate body fat content</p>
+                </div>
+                <div class="muscle">
+                    <img src="images/muscle.png" alt="">
+                    <h3>Muscle</h3>
+                    <p>BMI may missclassify muscular individuals as overweight or obese as it doesn't differentiate muscle from fat</p>
+                </div>
+            </section>
+            <section class="bottom-container">
+                <div class="pregnancy">
+                    <img src="images/pregnancy.png" alt="">
+                    <h3>Pregnancy</h3>
+                    <p>Expectant mothers experience weight gain due to their growing baby.
+                        Maintaining a healthy pre-pregnancy BMI is advisible to minimise health risks
+                        for both mother and child
+                    </p>
+                </div>
+                <div class="race">
+                    <img src="images/race.png" alt="">
+                    <h3>
+                        Race
+                    </h3>
+                    <p>
+                        Certain health concerns affect individuals of some Black and Asian origins at lower BMI's than others.
+                        To learn more, it is advised to discuss with your GP or practice nurse
+                    </p>
+                </div>
+
+            </section>
+        </div>
+        <script>    
+        function messageBmi(bmi){
+            if(bmi<=18.5){
+                return ("You are Underweight. ")
+            }
+            else if ((bmi>18.5)&&(bmi<24.9)){
+                return(" Waw Your Weight is Normal. ")
+            }
+            else if ((bmi>25)&&(bmi<29.9)){
+                return("You are overweight. ")
+            }
+            else{
+                return("You are Obese")
+            }
+        }
+        function calculateBmi() {
+      var a = parseInt(document.getElementById('weight').value);
+      var b = parseInt(document.getElementById('height').value);
+      var c = document.getElementById('resultDisplay')
+      var sum = isNaN(a) || (a<10) || isNaN(b) ? '' : (a/((b/100)*(b/100))).toFixed(2);
+      var sumRounded= sum;
+      var minWeight=(((b/100)*(b/100))*18.5).toFixed(2);
+      var maxWeight=(((b/100)*(b/100))*24.9).toFixed(2);
+      c.classList.add("myClass");
+      var result =`Your BMI is:  ${sumRounded} `;
+      console.log(messageBmi(sum));
+      document.getElementById('resultTitle').textContent = result;
+      document.getElementById('result').textContent = `${messageBmi(sum)} . Ideal weight: from ${minWeight} to ${maxWeight}`;
+    }
+        </script>
+    </body>
+</html>

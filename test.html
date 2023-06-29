@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Fields</title>
+
+  <script>
+ // Select the radio buttons and result div
+let option1 = document.getElementById('option1');
+let option2 = document.getElementById('option2');
+let resultDiv = document.getElementById('result');
+
+// Add event listener to the radio buttons
+option1.addEventListener('change', function() {
+  if (option1.checked) {
+    resultDiv.textContent = 'Option 1 is selected';
+  }
+});
+
+option2.addEventListener('change', function() {
+  if (option2.checked) {
+    resultDiv.textContent = 'Option 2 is selected';
+  }
+});
+
+
+  </script>
+</head>
+<body>
+    <input type="radio" name="option" id="option1" value="option1">
+    <label for="option1">Option 1</label>
+    
+    <input type="radio" name="option" id="option2" value="option2">
+    <label for="option2">Option 2</label>
+    
+    <div id="result">Selected option will be displayed here</div>
+</body>
+</html>

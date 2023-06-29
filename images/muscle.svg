@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
+<g transform="matrix(1 0 0 1 540 540)" id="c54bb395-70e8-4285-9463-47b2f22a6ed4"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="3778ce71-09c1-49b3-8863-8f3c272b68b1"  >
+</g>
+<g transform="matrix(1 0 0 1 540 540)"  >
+<g style="" vector-effect="non-scaling-stroke"   >
+		<g transform="matrix(0.13 0 0 -0.13 0 0)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(225,13,235); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-637.92, -497.08)" d="M 511 960 C 442 950 416 930 358 844 C 239 670 122 396 102 247 L 93 179 L 134 155 C 206 113 306 71 392 48 C 464 28 498 25 645 25 C 809 26 818 27 911 58 C 1123 129 1211 233 1175 372 C 1138 514 937 571 841 467 L 817 441 L 784 469 C 764 487 730 503 695 511 C 647 522 632 521 586 507 C 556 497 527 483 520 475 C 496 446 490 461 490 543 C 490 648 505 705 528 693 C 537 689 575 685 612 685 C 664 685 685 690 707 706 C 772 754 769 859 700 931 C 666 967 659 970 614 969 C 587 968 541 964 511 960 z M 672 929 C 696 916 729 846 730 807 C 730 771 705 723 683 717 C 673 714 644 709 618 705 C 579 700 568 702 551 719 C 524 746 534 768 576 776 C 595 779 610 786 610 791 C 610 804 566 802 535 788 C 500 772 473 679 465 548 C 456 396 453 385 405 325 C 380 295 365 268 370 265 C 382 257 437 317 462 365 C 473 387 492 416 504 428 C 580 512 722 510 797 423 L 828 386 L 843 422 C 870 487 937 511 1022 486 C 1105 462 1160 394 1160 317 C 1159 271 1128 209 1089 175 C 1016 114 852 60 694 45 C 507 27 187 114 134 196 C 118 220 118 226 135 298 C 158 400 198 498 276 650 C 351 796 426 901 472 923 C 510 942 640 946 672 929 z" stroke-linecap="round" />
+</g>
+		<g transform="matrix(0.13 0 0 -0.13 -3.72 7.61)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(225,13,235); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-610, -440)" d="M 600 440 C 600 435 605 430 610 430 C 616 430 620 435 620 440 C 620 446 616 450 610 450 C 605 450 600 446 600 440 z" stroke-linecap="round" />
+</g>
+		<g transform="matrix(0.13 0 0 -0.13 -11.84 12.95)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(225,13,235); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-549.11, -399.93)" d="M 541 414 C 515 393 499 360 514 360 C 521 360 590 426 590 433 C 590 447 571 439 541 414 z" stroke-linecap="round" />
+</g>
+		<g transform="matrix(0.13 0 0 -0.13 -0.8 35.33)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(225,13,235); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-631.92, -232.14)" d="M 740 243 C 708 220 698 218 625 222 C 577 225 532 233 513 243 C 493 254 479 256 475 250 C 462 229 561 196 641 196 C 706 195 722 199 753 220 C 773 234 790 251 790 258 C 790 275 780 272 740 243 z" stroke-linecap="round" />
+</g>
+</g>
+</g>
+</svg>
